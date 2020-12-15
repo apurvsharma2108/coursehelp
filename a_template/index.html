@@ -1,0 +1,811 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Minor Project</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <style >
+    .no-gutters {
+        margin-right: -150px;
+        margin-left: -178px;
+    }
+
+    </style>
+</head>
+
+<body >
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header >
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center no-gutters" >
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo-img">
+                                <a href="index.html">
+                               <img src="static/img/finalcourselogo.png" alt="helllo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+
+                                <nav >
+                                    <ul id="navigation">
+
+                                        <li><a class="active" href="index.html" style="color: black;">home</a></li>
+                                        <li><a href="Courses.html" style="color: black;">Course Recommender</a></li>
+                                        <li><a href="#" style="color: black;">More Options! <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="course_details.html" style="color: black;">Compare Courses</a></li>
+                                                <li><a href="http://sharmaapurv.pythonanywhere.com/"style="color: black;">Give FeedBack</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="about.html" style="color: black;">About</a></li>
+                                        <li><a href="#" style="color: black;">blog <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="https://loving-goldberg-340196.netlify.app/" style="color: black;">blog</a></li>
+                                                <li><a href="https://loving-goldberg-340196.netlify.app/blogpost.html" style="color: black;">single-blog</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="https://loving-goldberg-340196.netlify.app/contact.html" style="color: black;">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area ">
+        <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1" style="background-image: url({% static 'img/30.jpg' %});">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="illastrator_png">
+                            <img src="{% static 'img/banner/edu_ilastration.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="slider_info">
+                            <h3 style="color: black;">your one stop <br>
+                              Destination for finding a <br>
+                              perfect online course !
+                            </h3>
+                            <a href="#" class="boxed_btn">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- about_area_start -->
+    <div class="about_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-6">
+                    <div class="single_about_info">
+                        <h3 style="color:black">Our Reccomendation Engine Will <br>
+                          recommend you the perfect <br>
+                           online course you need!
+                        </h3>
+                        <p>Confused in choosing one course
+                          between
+                          so many differnt online courses available on differnt platforms well here we are.
+                         </p>
+                        <a href="#" class="boxed_btn">Get Reccomended Now!</a>
+                    </div>
+                </div>
+                <div class="col-xl-6 offset-xl-1 col-lg-6">
+                    <div class="about_tutorials">
+                        <div class="courses">
+                            <div class="inner_courses">
+                                <div class="text_info">
+                                    <span>1:</span>
+                                    <p>Compare Courses </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="courses-blue">
+                            <div class="inner_courses">
+                                <div class="text_info">
+                                    <span>2:</span>
+                                    <p>Get Reccomended Courses</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="courses-sky">
+                            <div class="inner_courses">
+                                <div class="text_info">
+                                    <span>3:</span>
+                                    <p>Give FeedBack about differnt Courses</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about_area_end -->
+
+    <!-- popular_courses_start -->
+    <div class="popular_courses">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <h3>Popular Courses</h3>
+                        <p>Here are some of the prefect <br>
+                          online courses reccomended by IT experts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="course_nav">
+                        <nav>
+                            <ul class="nav" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                        aria-controls="home" aria-selected="true">Top 6 <br>
+                                         courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                        aria-controls="profile" aria-selected="true">Machine <br>
+                                        learning</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                        aria-controls="contact" aria-selected="true">Data <br>
+                                        Science</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Web-tab" data-toggle="tab" href="#Web" role="tab"
+                                        aria-controls="design" aria-selected="true">Block <br>
+                                         chain.</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Web-tab1" data-toggle="tab" href="#Web1" role="tab"
+                                        aria-controls="design" aria-selected="true">Cloud <br>
+                                        computing</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Adobe-XD-tab8" data-toggle="tab" href="#Adobe-XD8" role="tab"
+                                        aria-controls="design" aria-selected="true">IoT.</a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="all_courses">
+            <div class="container">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row">
+
+                                {% for dest in dests  %}
+                                {% if 'top6' == dest.head %}
+
+                                    <div class="col-xl-4 col-lg-4 col-md-6">
+                                        <div class="single_courses">
+                                            <div class="thumb">
+                                                <a href="{{dest.link}}">
+                                                    <img src="{{dest.img.url}}" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="courses_info">
+                                                <span>{{dest.name}}</span>
+                                                <h3><a href="{{dest.link}}">{{dest.desc}}<br>
+                                                        </a></h3>
+                                                <div class="star_prise d-flex justify-content-between">
+                                                    <div class="star">
+                                                        <i class="flaticon-mark-as-favorite-star"></i>
+                                                        <span>{{dest.rating}}</span>
+                                                    </div>
+                                                    <div class="prise">
+                                                        <span class="offer">{{dest.price}} ₹</span>
+                                                        <span class="active_prise">
+                                                            {{dest.offer_price}} ₹
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 {% endif %}
+                                {% endfor %}
+                                </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="row">
+                                {% for dest in dests %}
+                                {% if 'ml' == dest.head %}
+                                    <div class="col-xl-4 col-lg-4 col-md-6  col-md-6">
+                                        <div class="single_courses">
+                                            <div class="thumb">
+                                                <a href="{{dest.link}}">
+                                                    <img src="{{dest.img.url}}" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="courses_info">
+                                                <span>Machine learning</span>
+                                                <h3><a href="{{dest.image.url}}">{{dest.desc}}
+                                                    <br>
+                                                        </a></h3>
+                                                <div class="star_prise d-flex justify-content-between">
+                                                    <div class="star">
+                                                        <i class="flaticon-mark-as-favorite-star"></i>
+                                                        <span>{{dest.rating}}</span>
+                                                    </div>
+                                                    <div class="prise">
+                                                        <span class="offer">{{dest.price}} ₹</span>
+                                                        <span class="active_prise">
+                                                            {{dest.offer_price}} ₹
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                {%endif %}
+                                {% endfor  %}
+                                </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="row">
+                                {% for dest in dests %}
+                                {% if 'data science' == dest.head %}
+                                    <div class="col-xl-4 col-lg-4 col-md-6">
+                                        <div class="single_courses">
+                                            <div class="thumb">
+                                                <a href="{{dest.link}}">
+                                                    <img src="{{dest.img.url}}" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="courses_info">
+                                                <span>Data Science</span>
+                                                <h3><a href="{{dest.link}}">{{dest.desc}} <br>
+                                                        </a></h3>
+                                                <div class="star_prise d-flex justify-content-between">
+                                                    <div class="star">
+                                                        <i class="flaticon-mark-as-favorite-star"></i>
+                                                        <span>{{dest.rating}}{{dest.head}}</span>
+                                                    </div>
+                                                    <div class="prise">
+                                                        <span class="offer">{{dest.price}} ₹</span>
+                                                        <span class="active_prise">
+                                                            {{dest.offer_price}} ₹
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                                {% endfor %}
+
+
+
+                                </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="Web" role="tabpanel" aria-labelledby="Web-tab">
+                            <div class="row">
+                                 {% for dest in dests %}
+                                {% if 'bc' == dest.head %}
+                                    <div class="col-xl-4 col-lg-4 col-md-6">
+                                        <div class="single_courses">
+                                            <div class="thumb">
+                                                <a href="{{dest.link}}">
+                                                    <img src="{{dest.img.url}}" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="courses_info">
+                                                <span>Block Chain</span>
+                                                <h3><a href="{{dest.link}}">{{dest.name}} <br>
+                                                        </a></h3>
+                                                <div class="star_prise d-flex justify-content-between">
+                                                    <div class="star">
+                                                        <i class="flaticon-mark-as-favorite-star"></i>
+                                                        <span>{{dest.rating}}</span>
+                                                    </div>
+                                                    <div class="prise">
+                                                        <span class="offer">{{dest.price}} ₹</span>
+                                                        <span class="active_prise">
+                                                            {{dest.offer_price}} ₹
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                                {% endfor %}
+
+                                </div>
+                    </div>
+
+
+
+                    <div class="tab-pane fade" id="Web1" role="tabpanel" aria-labelledby="Web-tab1">
+                            <div class="row">
+                                {% for dest in dests %}
+                                {% if 'cc' == dest.head %}
+                                    <div class="col-xl-4 col-lg-4  col-md-6">
+                                        <div class="single_courses">
+                                            <div class="thumb">
+                                                <a href="{{dest.link}}">
+                                                    <img src="{{dest.img.url}}" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="courses_info">
+                                                <span>Cloud computing</span>
+                                                <h3><a href="{{dest.link}}">{{dest.desc}}  <br>
+                                                        </a></h3>
+                                                <div class="star_prise d-flex justify-content-between">
+                                                    <div class="star">
+                                                        <i class="flaticon-mark-as-favorite-star"></i>
+                                                        <span>{{dest.rating}}</span>
+                                                    </div>
+                                                    <div class="prise">
+                                                        <span class="offer">{{dest.price}} ₹</span>
+                                                        <span class="active_prise">
+                                                            {{dest.offer_price}} ₹
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                              {% endif %}
+                                {% endfor  %}
+
+                                </div>
+                    </div>
+
+
+
+
+
+                    <div class="tab-pane fade" id="Adobe-XD8" role="tabpanel" aria-labelledby="Adobe-XD8">
+                            <div class="row">
+                                {% for dest in dests  %}
+                                {% if 'iot' == dest.head %}
+                                    <div class="col-xl-4 col-lg-4  col-md-6">
+                                        <div class="single_courses">
+                                            <div class="thumb">
+                                                <a href="{{dest.link}}">
+                                                    <img src="{{dest.img.url}}" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="courses_info">
+                                                <span>IoT</span>
+                                                <h3><a href="{{dest.link}}">{{dest.desc}} <br>
+                                                        </a></h3>
+                                                <div class="star_prise d-flex justify-content-between">
+                                                    <div class="star">
+                                                        <i class="flaticon-mark-as-favorite-star"></i>
+                                                        <span>{{dest.rating}}</span>
+                                                    </div>
+                                                    <div class="prise">
+                                                        <span class="offer">{{dest.price}} ₹</span>
+                                                        <span class="active_prise">
+                                                            {{dest.offer_price}} ₹
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                             {% endif %}
+
+                                {% endfor %}
+
+                                </div>
+                    </div>
+
+    <!-- popular_courses_end-->
+
+
+    <!-- testimonial_area_start -->
+    <div class="testimonial_area testimonial_bg_1 overlay">
+        <div class="testmonial_active owl-carousel">
+            <div class="single_testmoial">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="testmonial_text text-center">
+                                <div class="author_img">
+                                    <img src="{% static 'img/testmonial/author_img.png' %}" alt="">
+                                </div>
+                                <p>
+                                    "By using this website i was able to find my perfect <br>
+                                    online Course.
+                                    Also This Website helped me in comparing various differnt online courses easily.
+
+                                </p>
+                                <span>- Apurv</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_testmoial">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="testmonial_text text-center">
+                                <div class="author_img">
+                                    <img src="{% static 'img/testmonial/author_img.png' %}" alt="">
+                                </div>
+                                <p>
+                                    "This is the best website if you are Confused in <br>
+                                    choosing an online course
+                                    Strongly Reccomended.
+
+                                </p>
+                                <span>- Ayush</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonial_area_end -->
+
+    <!-- our_courses_start -->
+    <div class="our_courses">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <h3>Our Website Speciality</h3>
+                        <p>Our Website is one of it's kind
+                          You just need to answer a few simple question and
+                          we will recommend the perfect course for you !
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon">
+                            <i class="flaticon-art-and-design"></i>
+                        </div>
+                        <h3>Reccomendation Engine</h3>
+                        <p>
+                            With the help of our Reccomendation engine <br>
+                            you will easily get your reccomended course <br>
+                            in just few minutes.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon blue">
+                            <i class="flaticon-business-and-finance"></i>
+                        </div>
+                        <h3>Comparison</h3>
+                        <p>
+                            With the help of our Comparison engine <br>
+                            you compare various online courses to find out <br>
+                            about your course.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon">
+                            <i class="flaticon-premium"></i>
+                        </div>
+                        <h3>FeedBack</h3>
+                        <p>
+                            Our Website offers free and unbaised reviews <br>
+                            here you can get feedback about your course. <br>
+                            honset and unbaised feedbacks.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon gradient">
+                            <i class="flaticon-crown"></i>
+                        </div>
+                        <h3>Reccomended Courses</h3>
+                        <p>
+                            We have top courses Reccomended by <br>
+                            the IT experts on various subjects <br>
+                            Surely You don't want to miss that.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our_courses_end -->
+
+    <!-- subscribe_newsletter_Start -->
+    <div class="subscribe_newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="newsletter_text">
+                        <h3>Subscribe To Us Its completly Free!</h3>
+                        <p>Get latest updates about upcoming technologies and <br> latest tech news from us </p>
+                    </div>
+                </div>
+                <div class="col-xl-5 offset-xl-1 col-lg-6">
+                    <div class="newsletter_form">
+                        <h4>Your Email-Adress here</h4>
+                        <form  method="GET" class="newsletter_form">
+                            <input name= type="text" placeholder="Enter your mail">
+                            <button type="submit">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- subscribe_newsletter_end -->
+
+    <!-- our_latest_blog_start -->
+    <div class="our_latest_blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <h3>Our Latest Blog</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_latest_blog">
+                        <div class="thumb">
+                            <img src="{% static 'img/latest_blog/1.png' %}" alt="">
+                        </div>
+                        <div class="content_blog">
+                            <div class="date">
+                                <p>16 Sep, 2020 in <a href="https://techcrunch.com/2020/09/15/apple-september-15-event-roundup/">Tech News</a></p>
+                            </div>
+                            <div class="blog_meta">
+                                <h3><a href="https://techcrunch.com/2020/09/15/apple-september-15-event-roundup/">Here’s everything Apple revealed <br>
+                                  at its September hardware event</a></h3>
+                            </div>
+                            <p class="blog_text">
+                                Apple announced a ton of new devices and features today at its September hardware event,<br>
+                                 but no word on its upcoming iPhones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_latest_blog">
+                        <div class="thumb">
+                            <img src="{% static 'img/latest_blog/2.png' %}" alt="">
+                        </div>
+                        <div class="content_blog">
+                            <div class="date">
+                                <p>16 sep, 2020 in <a href="#">business</a></p>
+                            </div>
+                            <div class="blog_meta">
+                                <h3><a href="#">FedEx Will Track Your Packages More Precisely Than Ever
+                                                </a></h3>
+                            </div>
+                            <p class="blog_text">
+                              A Bluetooth-based system coming this fall will be especially useful for high-value shipments, like medicines or vaccines.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_latest_blog">
+                        <div class="thumb">
+                            <img src="{% static 'img/latest_blog/3.png' %}" alt="">
+                        </div>
+                        <div class="content_blog">
+                            <div class="date">
+                                <p>16 sep, 2020 in <a href="https://www.wired.com/story/could-breathalyzers-make-covid-testing-quicker-and-easier/">Health</a></p>
+                            </div>
+                            <div class="blog_meta">
+                                <h3><a href="https://www.wired.com/story/could-breathalyzers-make-covid-testing-quicker-and-easier/">Could Breathalyzers Make Covid Testing Quicker and Easier?
+                                                          </a></h3>
+                            </div>
+                            <p class="blog_text">
+                              A breath test would offer advantages over throat and nose swabs, but the technology is
+                               novel, and early trials with volunteers are still ongoing.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our_latest_blog_end -->
+
+
+    <!-- footer -->
+    <footer class="footer footer_bg_1">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="footer_widget">
+                            <div class="footer_logo">
+                                <a href="#">
+                                    <h1 style="color: black;">CouseHelp</h1>
+                                </a>
+                            </div>
+                            <p>
+                                1:Compare <br>
+                                2:Comment <br>
+                                3:Get Reccomend <br>
+                                and much more.....
+                            </p>
+                            <div class="socail_links">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ti-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ti-twitter-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-youtube-play"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Courses
+                            </h3>
+                            <ul>
+                                <li><a href="#home">Top Courses</a></li>
+                                <li><a href="#profile"> Machine learning</a></li>
+                                <li><a href="#contact">Data Science</a></li>
+                                <li><a href="#Web">Block Chain</a></li>
+                                <li><a href="#Web1">Cloud Computing</a></li>
+                                <li><a href="#Adobe-XD8">IoT</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Resources
+                            </h3>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Course Recommender</a></li>
+                                <li><a href="#">More Options</a></li>
+                                <li><a href="#"> About</a></li>
+                                <li><a href="#"> Contact</a></li>
+                                <li><a href="#"> Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Address
+                            </h3>
+                            <p>
+                                221-B,Baker street,India <br>
+                                +91 6266172324 <br>
+                                aayushsolanki56@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer -->
+
+
+
+
+
+    <!-- JS here -->
+    <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/ajax-form.js' %}"></script>
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/scrollIt.js' %}"></script>
+    <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/gijgo.min.js' %}"></script>
+
+    <!--contact js-->
+    <script src="{% static 'js/contact.js' %}"></script>
+    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'js/jquery.form.js' %}"></script>
+    <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'js/mail-script.js' %}"></script>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
